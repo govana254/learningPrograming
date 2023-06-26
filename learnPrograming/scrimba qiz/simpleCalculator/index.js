@@ -1,6 +1,6 @@
 let num1 = 8
 
-let num2 = 2
+let num2 = 32
 
 document.getElementById("num1-el").textContent = num1
 
