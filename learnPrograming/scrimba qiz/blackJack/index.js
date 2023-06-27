@@ -2,6 +2,8 @@ let firstCard = 1
 
 let secondCard = 3
 
+let cards = [firstCard, secondCard]
+
 let sum = firstCard + secondCard
 
 let hasBlackJack = false
@@ -30,7 +32,7 @@ function renderGame() {
    message = "You're out of the game!"
    isAlive = false 
     }
-    cardsEl.textContent = "Cards: " + firstCard + " " + secondCard
+    cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1]
 
     messageEl.textContent = message
 
