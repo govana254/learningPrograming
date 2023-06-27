@@ -1,6 +1,6 @@
-let firstCard = 1
+let firstCard = getRandomCard()
 
-let secondCard = 3
+let secondCard = getRandomCard()
 
 let cards = [firstCard, secondCard]
 
@@ -17,6 +17,10 @@ let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 
 let cardsEl = document.getElementById("cards-el")
+
+function getRandomCard() {
+    return Math.floor( Math.random() *13) + 1
+}
 
 function startGame() {
     renderGame()
@@ -44,7 +48,7 @@ function renderGame() {
 }
 
 function newCard() {
-    let newCard = 7
+    let newCard = getRandomCard()
 
      sum += newCard
 
