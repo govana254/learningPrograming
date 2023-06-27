@@ -32,7 +32,11 @@ function renderGame() {
    message = "You're out of the game!"
    isAlive = false 
     }
-    cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1]
+    cardsEl.textContent = "Cards: " 
+
+    for (let i = 0; i < cards.length; i++) {
+        cardsEl.textContent += cards[i] + " "
+    }
 
     messageEl.textContent = message
 
@@ -43,6 +47,10 @@ function newCard() {
     let newCard = 7
 
      sum += newCard
+
+     cards.push(newCard)
+
+     console.log(cards)
 
     renderGame()
     
